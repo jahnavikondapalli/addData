@@ -15,9 +15,7 @@ import java.sql.SQLException;
 @WebServlet("/addData")
 public class addstudent extends HttpServlet {
 
-    // ==========================================
-    // GET METHOD - DISPLAY FORM
-    // ==========================================
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
@@ -54,9 +52,7 @@ public class addstudent extends HttpServlet {
     }
 
 
-    // ==========================================
-    // POST METHOD - INSERT DATA
-    // ==========================================
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
@@ -68,9 +64,7 @@ public class addstudent extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
 
-        // ==========================================
-        // MYSQL DATABASE DETAILS
-        // ==========================================
+
 
         String url = "jdbc:mysql://localhost:3306/studentdb12";
         String username = "root";
